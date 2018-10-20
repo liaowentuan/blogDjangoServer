@@ -24,5 +24,5 @@ python manage.py runserver 0.0.0.0:3000
 
 ```
 
-# 前后端分离的 django project
-前端代码传送门 [前端github地址](https://github.com/liaowentuan/index).
+## 前后端分离的 django project
+> 前端代码传送门 [前端github地址](https://github.com/liaowentuan/index).
