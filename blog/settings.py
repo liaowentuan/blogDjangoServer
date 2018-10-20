@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'corsheaders', # new
+    # 'corsheaders', # 虽然引入了，然而好像不需要这个插件
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware', # new
+    # 'corsheaders.middleware.CorsMiddleware', # 虽然引入了，然而好像不需要这个插件
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -54,9 +54,9 @@ MIDDLEWARE = [
     'blogServer.middleware.HttpPost2HttpOtherMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
-      '127.0.0.1:8686',
-)
+# CORS_ORIGIN_WHITELIST = (
+#       '127.0.0.1:8686',
+# )
 
 ROOT_URLCONF = 'blog.urls'
 

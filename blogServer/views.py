@@ -16,7 +16,11 @@ def add(request):
         # 执行sql语句
         cursor.execute(SQL_str)
         # 获取返回值
-        result = cursor.fetchall()
+        result = cursor.fetchone()
+        print('''
+        result === > === < === fetchone
+        ''')
+        print(result)
         # 关闭游标
         cursor.close()
         # if answer == None :
@@ -30,6 +34,10 @@ def add(request):
         cursor.execute(SQL_str)
         # 获取返回值
         result = cursor.fetchall()
+        print('''
+        result === > === < === fetchall
+        %s
+        '''%(result))
         # 关闭游标
         cursor.close()
         # if answer == None :
